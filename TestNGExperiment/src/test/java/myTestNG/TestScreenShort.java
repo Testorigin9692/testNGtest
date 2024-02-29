@@ -16,7 +16,7 @@ public class TestScreenShort extends BaseClass {
 		  String exp="http://www.automationpractice.pl/index.php?controller=my-account";
 		 driver.findElement(By.className("login")).click();
 		 driver.findElement(By.id("email")).sendKeys("kunuweds@gmail.com");
-		 driver.findElement(By.id("passwd")).sendKeys("Balasore1");
+		 driver.findElement(By.id("passwd")).sendKeys("Balasore@1");
 		 driver.findElement(By.id("SubmitLogin")).click();
 		 String act=driver.getCurrentUrl();
 		 test=reports.createTest("App Login");
