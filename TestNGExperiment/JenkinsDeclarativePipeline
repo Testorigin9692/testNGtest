@@ -17,7 +17,7 @@ pipeline
             steps 
                {
                 echo 'Testing..'
-                bat "mvn test"
+                bat "mvn -f TestNGExperiment//pom.xml clean install"
                }
             }
        stage('Compile') 
@@ -25,7 +25,7 @@ pipeline
             steps 
                {
                 echo 'Compiling the project'
-                bat "mvn compile"
+                bat "mvn -f TestNGExperiment//pom.xml clean install"
                }
             }
         stage('Deploy') 
