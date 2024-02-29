@@ -9,7 +9,7 @@ pipeline
             steps 
                {
                 echo 'Building..'
-               bat "mvn -f<TestNGExperiment/pom.xml> compile
+               bat "mvn -f<TestNGExperiment/pom.xml> compile"
                }
             }
         stage('Test') 
