@@ -9,7 +9,7 @@ pipeline
             steps 
                {
                 echo 'Building..'
-               bat "mvn clean"
+               bat "mvn clean --file *.pom"
                }
             }
         stage('Test') 
