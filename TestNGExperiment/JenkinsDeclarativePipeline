@@ -9,14 +9,13 @@ pipeline
             steps 
                {
                 echo 'Building..'
-               bat ' mvn -f TestNGExperiment//pom.xml clean install '
                }
             }
         stage('Test') 
             {
             steps 
                {
-                echo 'Testing..'
+                echo 'Testing the build..'
                 bat "mvn -f TestNGExperiment//pom.xml clean install"
                }
             }
@@ -24,14 +23,13 @@ pipeline
             {
             steps 
                {
-                echo 'Compiling the project'
-                bat "mvn -f TestNGExperiment//pom.xml clean install"
+                echo 'Compiling the build'
                }
             }
         stage('Deploy') 
             {
             steps {
-                   echo 'Deploying....'
+                   echo 'Deploying the build....'
                   }
             }
 }
